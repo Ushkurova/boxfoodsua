@@ -20,32 +20,6 @@ function prevCategory(user){
     }
 }
 
-function changeYesNo (btn){
-    var options = document.getElementsByClassName('option');
-    console.log('yes no');
-    console.log(options.length);
-    if (btn.target.textContent == 'yes'){
-    btn.target.textContent = 'no';
-    for (var i = 0; i < options.length; i++)
-    {
-        for (var c = 0; c < options[i].children.length; c++){
-            console.log(options[i].children[c]);
-            if (options[i].children[c] == btn.target)
-            {
-                options[i].style.color = 'red';
-                // записать в hideOptions
-                break;
-            }
-        }
-    }
-  //  div.classList.add('cancelItem');
-    }
-    else{
-         btn.target.textContent = 'yes';
-    //    div.classList.remove('cancelItem');
-    }
-}
-
 function loadInfoOfCategoryAdmin(){
     var allProducts = document.getElementsByClassName('option');
     console.log(allProducts.length);
@@ -108,22 +82,8 @@ function loadInfoOfCategory(user){
     });
     var img = document.getElementById('imgFood');
     img.src = `img/${images[numberOfCategory]}`;
-    if (user == 'admin')
-    {
-        console.log(document.getElementsByClassName('option').length);
-        setTimeout(loadInfoOfCategoryAdmin, 500);
-    //loadInfoOfCategoryAdmin();
-    }
+
 }
 
 
-if (document.title == 'Admin')
-{
-loadInfoOfCategory('admin');
-console.log('admin');
-}
-else
-{
-    console.log('user');
 loadInfoOfCategory('user');
-}
