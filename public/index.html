@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods UA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="const.js" defer></script>
+    <script src="data.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Foods UA</h1>
+        </div>
+        <div class="imageMenu">
+            <img src="img/foodsua.png" alt="">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()" style="display: none;">
+            &#9776;
+        </div>
+        <nav id="navbar" style="display: none;">
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <div onclick="nextCategory()" class="arrow next">
+            >
+        </div>
+        <div onclick="prevCategory()" class="arrow prev">
+            < </div>
+                <div class="imgFood">
+                    <img id="imgFood" src="" alt="">
+                </div>
+                <h2>Меню</h2>
+                <div class="menu-section">
+                    <h3 id="itemName">Закуски</h3>
+                    <ul id="ulItems">
+                    </ul>
+                </div>
+    </section>
+    <div class="pad"></div>
+
+    <footer id="contacts">
+        <p>Адрес: Салям главная улица, кафе 4</p>
+        <p>Открыты с 13.00 до 23.30</p>
+        <p>+20 103 345 7271</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.style.display === "block") {
+                navbar.style.display = "none";
+            } else {
+                navbar.style.display = "block";
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script>
+            
+            // Hammer.js для обработки свайпов
+            const hammer = new Hammer(document.body);
+
+            hammer.on('swipeleft', () => {
+                   nextCategory();
+            });
+
+            hammer.on('swiperight', () => {
+               prevCategory();
+            });
+    </script>
+</body>
+
+</html>
