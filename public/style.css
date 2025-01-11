@@ -1,10 +1,29 @@
 /* Общие стили */
+
+@font-face {
+  font-family: magnolia;
+  src: url(fonts/magnolia-script.woff2);
+}
+
+@font-face {
+  font-family: vizit;
+  src: url(fonts/vizit.woff2);
+}
+
+
+@font-face {
+  font-family: yarin;
+  src: url(fonts/yarin-bold.woff2);
+}
+
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #131313;
   color: #ffffff;
+  font-family: magnolia, sans-serif;
 }
 
 header {
