@@ -8,7 +8,7 @@ var categories =  [salads, firstCources, pasta, garniry, meatDishes, mangal, own
 var numberOfCategory = 0;
 
 function nextCategory(user){
-    if (numberOfCategory < categories.length-2){
+    if (numberOfCategory < categories.length){
     numberOfCategory++;
     loadInfoOfCategory(user);
     }
@@ -20,25 +20,9 @@ function prevCategory(user){
     }
 }
 
-function loadInfoOfCategoryAdmin(){
-    var allProducts = document.getElementsByClassName('option');
-    console.log(allProducts.length);
-    for (var i = 0; i < allProducts.length; ++i){
-        var cancel = document.createElement('button');
-        cancel.textContent = 'yes';
-        cancel.classList.add('cancel');
-        cancel.style.width = '10vw';
-        cancel.style.height = '5vw';
-        cancel.style.backgroundColor = 'white';
-        allProducts[i].appendChild(cancel);
-        cancel.addEventListener('click', changeYesNo, cancel);
-
-    }
-
-}
 
 function loadInfoOfCategory(user){
-    if (numberOfCategory > 16)
+    if (numberOfCategory > categories.length - 1)
         return;
     var category = categories[numberOfCategory];
     fetch(`${category}.txt`).then(r => r.text()).then(d => {

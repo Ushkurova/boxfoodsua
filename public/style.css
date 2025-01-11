@@ -57,8 +57,9 @@ nav ul li a:hover {
 }
 
 h2 {
-  font-size: 3.8vw;
-  color: #f0a500;
+  font-size: 6vw;
+  color: #40b54a;
+  text-shadow: 0 0 15px rgb(68, 255, 0);
 }
 
 .menu-section {
@@ -66,8 +67,8 @@ h2 {
 }
 
 .menu-section h3 {
-  font-size: 3.4vw;
-  color: #ffffff;
+  font-size: 4.4vw;
+  color: #ddca39;
   margin-bottom: 10px;
 }
 
@@ -90,12 +91,11 @@ footer {
   bottom: 0;
   width: 100vw;
   background-color: #141414;
-  padding: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
 footer p {
-  margin: 5px 0;
   color: #ffffff;
 }
 
