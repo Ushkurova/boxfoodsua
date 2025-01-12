@@ -82,7 +82,7 @@ h2 {
 }
 
 .menu-section {
-  margin-bottom: 30px;
+  margin-bottom: 110px;
 }
 
 .menu-section h3 {
@@ -106,6 +106,7 @@ h2 {
 
 /* Подвал */
 footer {
+
   position: fixed;
   bottom: 0;
   width: 100vw;

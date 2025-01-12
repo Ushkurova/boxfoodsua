@@ -1,8 +1,8 @@
 
 
-var categories =  [salads, firstCources, pasta, garniry, meatDishes, mangal, own, varenniki, bliny, deserts, coffee, icecoffee,
-    tea, extra, juice, cold_drink, icecream,
-    extra_to_icecream, sauce, shisha
+var categories =  [salads, firstCources, pasta, garniry, bread, meatDishes, mangal, own, varenniki, bliny, deserts, coffee, icecoffee,
+    tea, extra, juice, cold_drink, /*icecream,
+    extra_to_icecream, */ sauce, shisha
 ];
 
 var numberOfCategory = 0;
