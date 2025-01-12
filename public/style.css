@@ -210,6 +210,16 @@ footer p {
 
 }
 
+
+#imgFood2{
+  position: fixed;
+  width: 40vw;
+  top: 30vh;
+  left: 10vw;
+  z-index: -1;
+
+}
+
 .pad{
   width: 100wv;
   height: 50px;

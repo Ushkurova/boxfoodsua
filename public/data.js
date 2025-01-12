@@ -66,6 +66,8 @@ function loadInfoOfCategory(user){
     });
     var img = document.getElementById('imgFood');
     img.src = `img/${images[numberOfCategory]}`;
+    var img2 = document.getElementById('imgFood2');
+    img2.src = `imgtop/${images[numberOfCategory]}`;
 
 }
 
