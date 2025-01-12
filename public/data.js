@@ -71,3 +71,14 @@ function loadInfoOfCategory(user){
 
 
 loadInfoOfCategory('user');
+
+function showadress(){
+    var a = document.getElementsByTagName("footer")[0];
+    a.style.display = "block";
+}
+
+
+function hideadress(){
+    var a = document.getElementsByTagName("footer")[0];
+    a.style.display = "none";
+}

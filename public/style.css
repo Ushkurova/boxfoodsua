@@ -106,7 +106,7 @@ h2 {
 
 /* Подвал */
 footer {
-
+  display: none;
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -213,4 +213,13 @@ footer p {
 .pad{
   width: 100wv;
   height: 50px;
+}
+
+.adress{
+  opacity: 0.7;
+position: fixed;
+bottom: 3vh;
+width: 100vw;
+font-size: 3.4vw;
+text-align: center;
 }
