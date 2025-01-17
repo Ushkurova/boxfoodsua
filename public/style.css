@@ -15,6 +15,10 @@
   font-family: yarin;
   src: url(fonts/yarin-bold.woff2);
 }
+@font-face {
+  font-family: nm;
+  src: url(fonts/nn.woff2);
+}
 
 
 body {
@@ -23,7 +27,7 @@ body {
   padding: 0;
   background-color: #131313;
   color: #ffffff;
-  font-family: magnolia, sans-serif;
+  font-family: nm, sans-serif;
 }
 
 header {
@@ -77,8 +81,8 @@ nav ul li a:hover {
 
 h2 {
   font-size: 6vw;
-  color: #40b54a;
-  text-shadow: 0 0 15px rgb(68, 255, 0);
+  color: #00ff15;
+  text-shadow: 0 0 15px rgb(255, 255, 255);
 }
 
 .menu-section {
@@ -87,7 +91,7 @@ h2 {
 
 .menu-section h3 {
   font-size: 4.4vw;
-  color: #ddca39;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
