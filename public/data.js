@@ -1,6 +1,10 @@
-
+var lan = 'ru';
 
 var categories =  [salads, firstCources, pasta, garniry, bread, meatDishes, mangal, own, varenniki, bliny, deserts, coffee, icecoffee,
+    tea, extra, juice, cold_drink, /*icecream,
+    extra_to_icecream, */ sauce, shisha
+];
+var categoriesen =  [saladsen, firstCources, pasta, garniry, bread, meatDishes, mangal, own, varenniki, bliny, deserts, coffee, icecoffee,
     tea, extra, juice, cold_drink, /*icecream,
     extra_to_icecream, */ sauce, shisha
 ];
@@ -22,9 +26,13 @@ function prevCategory(user){
 
 
 function loadInfoOfCategory(user){
-    if (numberOfCategory > categories.length - 1)
+    let c= categories;
+    console.log(lan);
+    if (select.value == 'en')
+        c = categoriesen;
+    if (numberOfCategory >  c.length - 1)
         return;
-    var category = categories[numberOfCategory];
+    var category = c[numberOfCategory];
     fetch(`${category}.txt`).then(r => r.text()).then(d => {
     const menu = d.split('\n');
     let ulItems = document.getElementById('ulItems');
@@ -72,7 +80,6 @@ function loadInfoOfCategory(user){
 }
 
 
-loadInfoOfCategory('user');
 
 function showadress(){
     var a = document.getElementsByTagName("footer")[0];
@@ -84,3 +91,30 @@ function hideadress(){
     var a = document.getElementsByTagName("footer")[0];
     a.style.display = "none";
 }
+
+var select = document.querySelector('.change-lang');
+const allLang = ['en','ru'];
+select.addEventListener('change',changeURLLanguage);
+
+function changeURLLanguage(){
+    let lang = select.value;
+    location.href =window.location.pathname + '#' + lang;
+    location.reload();
+    
+}
+function changeLanguage(){
+    console.log('hgy');
+        let hash = window.location.hash;
+    hash = hash.substr(1);
+    if(!allLang.includes(hash)){
+        location.href = window.location.pathname + '#ru';
+        location.reload;
+    }
+        else{
+        select.value = hash;
+ }
+}
+
+changeLanguage();
+
+loadInfoOfCategory('user');

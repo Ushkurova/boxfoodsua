@@ -19,6 +19,7 @@ const extra_to_icecream = 'ДОБАВКИ К МОРЖЕНОМУ';
 const sauce = 'СОУСЫ';
 const shisha = 'КАЛЬЯН';
 const bread = 'Хлеб';
+const saladsen = 'Salads';
 const images = ['salad.png', 'soup.png', 'pasta.png', 'garnir.png',
      'bread.png' ,'meat.png', 'kebab.png', 'own.png', 'var.png',
       'p.png', 'desert.png','coffee.png', 
