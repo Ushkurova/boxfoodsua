@@ -1,12 +1,12 @@
-var lan = 'ru';
+
 
 var categories =  [salads, firstCources, pasta, garniry, bread, meatDishes, mangal, own, varenniki, bliny, deserts, coffee, icecoffee,
     tea, extra, juice, cold_drink, /*icecream,
     extra_to_icecream, */ sauce, shisha
 ];
-var categoriesen =  [saladsen, firstCources, pasta, garniry, bread, meatDishes, mangal, own, varenniki, bliny, deserts, coffee, icecoffee,
-    tea, extra, juice, cold_drink, /*icecream,
-    extra_to_icecream, */ sauce, shisha
+var categoriesen =  [saladsen, firstCourcesen, pastaen, garniryen, breaden, meatDishesen, mangalen, ownen, varennikien, blinyen, desertsen, coffeeen, icecoffeeen,
+    teaen, extraen, juiceen, cold_drinken, /*icecreamen,
+    extra_to_icecreamen, */ sauceen, shishaen
 ];
 
 var numberOfCategory = 0;
@@ -27,9 +27,16 @@ function prevCategory(user){
 
 function loadInfoOfCategory(user){
     let c= categories;
-    console.log(lan);
     if (select.value == 'en')
+    {
         c = categoriesen;
+        document.getElementById('titlemenu').textContent = 'menu';
+        document.getElementById('address').textContent = 'Production address foodsUa: Roza mall';
+        document.getElementById('open').textContent = 'Open from 1 p.m. to .9 p.m.';
+        document.getElementById('addresscafe').textContent = 'Cafe address foodsUa: Salam street, cafe 4';
+        document.getElementById('opencafe').textContent = 'Open from 1 p.m. до 11.30 p.m.';
+        document.getElementById('footeraddress').textContent = 'Address';
+    }
     if (numberOfCategory >  c.length - 1)
         return;
     var category = c[numberOfCategory];

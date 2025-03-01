@@ -20,6 +20,26 @@ const sauce = 'СОУСЫ';
 const shisha = 'КАЛЬЯН';
 const bread = 'Хлеб';
 const saladsen = 'Salads';
+const firstCourcesen = 'First courses';
+const pastaen = 'Pasta';
+const garniryen  = 'Side dishes';
+const meatDishesen = 'Meat dishes';
+const mangalen = 'Grilled dishes';
+const ownen = 'In-house production';
+const varennikien ='Vareniki';
+const blinyen  = 'Blinchiki';
+const desertsen = 'Desserts';
+const coffeeen = 'Coffee';
+const icecoffeeen = 'Iced coffee';
+const teaen = 'Tea';
+const extraen = 'Tea additives';
+const juiceen = 'Natural juices';
+const cold_drinken = 'Cold beverages';
+const icecreamen = 'Ice cream';
+const extra_to_icecreamen = 'Ice cream additivies';
+const sauceen = 'Sauce';
+const shishaen = 'Fruit hookah';
+const breaden = 'Bread';
 const images = ['salad.png', 'soup.png', 'pasta.png', 'garnir.png',
      'bread.png' ,'meat.png', 'kebab.png', 'own.png', 'var.png',
       'p.png', 'desert.png','coffee.png', 
