@@ -3,6 +3,7 @@ const firstCources = 'ПЕРВЫЕ БЛЮДА';
 const pasta = 'ПАСТА';
 const garniry  = 'ГАРНИРЫ';
 const meatDishes = 'МЯСНЫЕ БЛЮДА';
+const pizza = 'Пицца';
 const mangal = 'БЛЮДА НА МАНГАЛЕ';
 const own = 'СОБСТВЕННОЕ ПРОИЗВОДСТВО';
 const varenniki ='Вареники';
@@ -25,6 +26,7 @@ const firstCourcesen = 'First courses';
 const pastaen = 'Pasta';
 const garniryen  = 'Side dishes';
 const meatDishesen = 'Meat dishes';
+const pizzaen = 'Pizza';
 const mangalen = 'Grilled dishes';
 const ownen = 'In-house production';
 const varennikien ='Vareniki';
@@ -43,7 +45,7 @@ const sauceen = 'Sauce';
 const shishaen = 'Fruit hookah';
 const breaden = 'Bread';
 const images = ['salad.png', 'soup.png', 'pasta.png', 'garnir.png',
-     'bread.png' ,'meat.png', 'kebab.png', 'own.png', 'var.png',
+     'bread.png' ,'meat.png', 'pizza.png' ,'kebab.png', 'own.png', 'var.png',
       'p.png', 'desert.png','coffee.png', 
     'ice.png', 'tea.png', 'dobavki.png', 'natural_j.png', 
     'cold_drink.png',

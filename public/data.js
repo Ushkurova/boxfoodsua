@@ -1,10 +1,10 @@
 
 
-var categories =  [salads, firstCources, pasta, garniry, bread, meatDishes, mangal, own, varenniki, bliny, frozen, deserts, coffee, icecoffee,
+var categories =  [salads, firstCources, pasta, garniry, bread, meatDishes, pizza, mangal, own, varenniki, bliny, frozen, deserts, coffee, icecoffee,
     tea, extra, juice, cold_drink, /*icecream,
     extra_to_icecream, */ sauce, shisha
 ];
-var categoriesen =  [saladsen, firstCourcesen, pastaen, garniryen, breaden, meatDishesen, mangalen, ownen, varennikien, blinyen, frozenen, desertsen, coffeeen, icecoffeeen,
+var categoriesen =  [saladsen, firstCourcesen, pastaen, garniryen, breaden, meatDishesen, pizzaen, mangalen, ownen, varennikien, blinyen, frozenen, desertsen, coffeeen, icecoffeeen,
     teaen, extraen, juiceen, cold_drinken, /*icecreamen,
     extra_to_icecreamen, */ sauceen, shishaen
 ];
