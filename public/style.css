@@ -271,3 +271,21 @@ option{
 option:hover{
     background-color: rgb(159, 146, 146);
 }
+
+.boxinst{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.imginst{
+  width: 6vw;
+  margin-left: -10vw;
+}
+
+.inst{
+  margin-right: -10vw;
+  color: #2bb336;
+}
