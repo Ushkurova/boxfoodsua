@@ -32,9 +32,7 @@ function loadInfoOfCategory(user){
         c = categoriesen;
         document.getElementById('titlemenu').textContent = 'menu';
         document.getElementById('address').textContent = 'Production address foodsUa: Roza mall';
-        document.getElementById('open').textContent = 'Open from 1 p.m. to .9 p.m.';
-        document.getElementById('addresscafe').textContent = 'Cafe address foodsUa: Salam street, cafe 4';
-        document.getElementById('opencafe').textContent = 'Open from 1 p.m. до 11.30 p.m.';
+        document.getElementById('open').textContent = 'Open from 1.30 p.m. to 11.30 p.m.';
         document.getElementById('footeraddress').textContent = 'Address';
     }
     if (numberOfCategory >  c.length - 1)
